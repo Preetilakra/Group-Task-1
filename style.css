@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(33-08692-transformed.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    padding: 0.3vw 5vw 0;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px
+}
+
+header .left h1{
+    font-size:1.7em ;
+}
+
+ul{
+    list-style: none;
+}
+
+nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 2vw;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+}
+
+/* nav ul li .dropdown p{
+   
+} */
+
+.right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+}
+
+.right input{
+    height: 2.5vw;
+    width: 12vw;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    padding: 1vw 1vw 1vw 2vw;
+    font-size: 0.8em;
+    opacity: 0.6;   
+}
+
+.right label{
+    position: absolute;
+    left: 2px;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+
+.right a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.6;
+}
+
+.right img{
+    width: 3vw;
+    height: 2.6vw;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+
+
+
+
+.dropdown-menu{
+    display: none;
+}
