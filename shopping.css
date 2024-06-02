@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root
+{
+    --primery-color:#f6b200;
+    --secondry-color:#232323;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+}
+/* Header */
+header {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    border-bottom: 1px solid #ebebeb;
+    width: 100%;
+    padding: 1rem 3rem;
+    margin: 0 auto;
+}
+header .left h1{
+    font-size:1.2em ;
+    color: #f6b200;
+}
+header .left h1 span{
+    color: blue;
+}
+
+/* Navbar */
+nav ul{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 2vw;
+}
+ul{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:var(--secondry-color);
+    font-size: 1rem;
+}
+/* Dropdown code */
+nav .dropdown {
+    position: relative;
+}
+nav .dropdown-menu {
+    background-color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 6vw;
+    height: 8vw;
+    padding: 0.6vw;
+    gap: 1vw;
+    top: 1.3em;
+    left: 1em;
+}
+nav .dropdown-menu li{
+    font-size: 1.15rem;
+    font-weight: 300;
+}
+nav .dropdown-1, .dropdown-2{
+    display: none;
+}
+nav .dropdown:hover .dropdown-1{
+    display:block;
+}
+nav .dropdown:hover .dropdown-2{
+    display:block;
+}
+
+/* Right side code */
+.right{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    position: relative;
+}
+.right input {
+    height: 2.5vw;
+    width: 12vw;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid;
+    padding: .4rem 1.6rem;
+    font-size: 0.8em;
+    opacity: 0.6;
+    border: 1px solid #c8c8c8;
+    color:var(--secondry-color);
+    font-size: 16px;
+}
+.right input:placeholder{
+    color: var(--secondry-color);
+}
+.right label{
+    position: absolute;
+    left: 4px;
+    font-size: 0.8em;
+    opacity: 0.6;
+}
+.right label i{
+    color:var(--secondry-color);
+    font-size: 16px;
+}
+.right a{
+    text-decoration: none;
+    color: var(--secondry-color);
+    opacity: 0.6;
+}
+.right img {
+    width: 3vw;
+    height: auto;
+    border-radius: 50%;
+    opacity: 0.8;
+    border: 1px solid #ccc;
+}
+
+main{
+    width: 100%;
+    height: calc(100vh - 75px);
+}
+
+main section{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 6rem;
+}
+main section .container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+section h1{
+    width: 100%;
+    height: 10%;
+    font-size: 2.5vw;
+}
+
+.container .left-container{
+    width: 60%;
+    height: 100%;
+    padding: 2px;
+}
+
+.left-container table{
+    width: 100%;
+    height: 50% ;
+    position: relative;
+}
+
+.left-container table .width-1{
+    width: 40% ;
+} 
+
+.left-container table .width-2{
+    width: 25%;
+}
+
+.left-container table tr th,td{
+    text-align: left;
+    padding: 0.5vw;
+}
+
+.left-container table tr th{
+    opacity: 0.6;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.35);
+}
+
+.left-container table tr td i{
+    color: red;
+    font-size: 1.5vw;
+}
+.container .right-container{
+    width: 40%;
+    height: 100%;
+    padding:0.2vw 2vw;
+}
+.right-container .card{
+    width: 80%;
+    height: 70%;
+    margin-bottom: 1vw;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-container .card .coupon-code{
+    margin-bottom: 1vw;
+}
+.right-container .card .coupon-code h4{
+    font-size: 1.2vw;
+    opacity: .8;
+    margin-bottom: 0.3vw;
+}
+.right-container .card .coupon-code form input{
+    width: 60%;
+    height: 4vw;
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.35);
+    padding: 0.5vw;
+    font-size: 1.05rem;
+}
+
+.right-container .card .coupon-code form button{
+    width: 38%;
+    height: 4vw;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+    font-size: 0.9rem;
+    background-color: rgba(0, 0, 255, 0.925);
+    color: #fff;
+}
+
+.right-container .card table{
+    width: 100%;
+}
+
+.right-container .align{
+    text-align: right;
+}
+
+.right-container button{
+    width: 80%;
+    height: 15%;
+    border: none;
+    outline: none;
+    background-color: #f6b200;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.right-container .bottom-icon{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.right-container .bottom-icon img{
+    width: 7vw;
+    height: 2vw;
+}
+
+.right-container .bottom-icon:nth-child(2n+1){
+    width: 4vw;
+}
