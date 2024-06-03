@@ -253,7 +253,7 @@ section h1{
 }
 
 .right-container .bottom-icon{
-    width: 100%;
+    width: 80%;
     height: 15%;
     display: flex;
     justify-content: space-evenly;
@@ -265,6 +265,6 @@ section h1{
     height: 2vw;
 }
 
-.right-container .bottom-icon:nth-child(2n+1){
+.right-container .bottom-icon .img-width{
     width: 4vw;
 }
